@@ -2,6 +2,7 @@
 import streamlit
 import pandas
 import requests
+import snoflake.connector
 
 streamlit.title('My Parents new Healthy Diner')
 
