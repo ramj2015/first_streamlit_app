@@ -59,7 +59,7 @@ if streamlit.button('get fruit load list'):
 
 def insert_row_snowflake(new_fruit):
     with my_cnx.cursor() as my_cur:
-        my_cur.execute("insert into fruit_load_list values(" + new_fruit + ")")
+        my_cur.execute("insert into fruit_load_list values('" + new_fruit +"')")
         return "Thanks for Adding " + new_fruit
     
 streamlit.text("what Fruit you would like to add?")
